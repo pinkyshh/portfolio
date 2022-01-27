@@ -17,6 +17,8 @@
   
   <link rel="stylesheet" href="css/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.con/bootstrap/4.1.0/css/bootstrap.min.css">
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
  
@@ -40,7 +42,7 @@
    </div>
  </nav>
  
- <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg_4.jpg');" data-stellar-background-ratio="0.5">
+ <section class="hero-wrap hero-wrap-2" style="background-image: url('images/bg.jpg');" data-stellar-background-ratio="0.5">
   <div class="overlay"></div>
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
@@ -58,52 +60,16 @@
     <div class="row">
       <div class="col-lg-8 ftco-animate">
         <h2 class="mb-3">What is the app 'AuIdea' about?</h2>
-        <p>A platform for students to see a list of available senior projects and recommend the projects based on student's academic records.</p>
+        <p>AuIdea is a simple application where students will be shown a list of top n projects generated using a recommendation algorithm. 
+          These projects are curated based on their courses studied throughout the semesters.</p>
         <div class="ftco-about ftco-section ftco-no-pt ftco-no-pb">
         <ul class="about-info mt-4 px-md-0 px-2">
           <li class="d-flex"><span>Development:</span> <span>Jun - Oct 2021</span></li>
           <li class="d-flex"><span>App Type:</span> <span>Android</span></li>
           <li class="d-flex"><span>Language: </span> <span>Kotlin</span></li>
           <li class="d-flex"><span>Platform: </span> <span>Android Studio (Development) &amp; Adobe XD (Prototype)</span></li>
-          <li class="d-flex"><span>Repository: </span> <span><a href="https://github.com/pinkyshh/AuIdea">View on Github</a></p></span></li>
+          <li class="d-flex"><span>Repository: </span> <u><span><a href="https://github.com/pinkyshh/AuIdea">View on Github</a></u></p></span></li>
         </ul>
-        </div>
-        <h2 class="mb-3 mt-5">The User Interface Design</h2>
-        <p>The colors and theme of the application is based on the faculty's brand color (purple) for whom the application was developed. The application has only one theme, light theme. It was designed with the help of gestalts principles to organize the contents so it is aesthetically pleasing and easy to understand.</p>
-        
-        <div class="about-author d-flex p-4 bg-light-dark" style="width: 800px;">
-          <div class="bio mr-5">
-            <div class="work-thumb">
-
-              <!-- First row of pictures -->
-              <a href="images/auidea/Login.png" class="image-popup">
-                <img src="images/auidea/Login.png" class="img-responsive" alt="Splash Screen" style="width: 200px; height: 400px; border-radius: 25px; margin-right: 25px; margin-left: 40px;">
-              </a>
-
-              <a href="images/auidea/Home Screen.png" class="image-popup">
-                <img src="images/auidea/Home Screen.png" class="img-responsive" alt="Login Screen" style="width: 200px; height: 400px; border-radius: 25px; margin-right: 25px;">
-              </a>
-
-              <a href="images/auidea/Project Screen - Details.png" class="image-popup">
-                <img src="images/auidea/Project Screen - Details.png" class="img-responsive" alt="Home Screen" style="width: 200px; height: 400px; border-radius: 25px;">
-              </a>
-
-              <!-- Second row of pictures -->
-
-              <a href="images/auidea/About - 1.png" class="image-popup">
-                <img src="images/auidea/About - 1.png" class="img-responsive" alt="Splash Screen" style="width: 200px; height: 400px; border-radius: 25px; margin-right: 25px; margin-left: 40px; margin-top: 10px;">
-              </a>
-
-              <a href="images/auidea/Advisor.png" class="image-popup">
-                <img src="images/auidea/Advisor.png" class="img-responsive" alt="Login Screen" style="width: 200px; height: 400px; border-radius: 25px; margin-right: 25px; margin-top: 10px;">
-              </a>
-
-              <a href="images/auidea/Advisor Information - Specialty.png" class="image-popup">
-                <img src="images/auidea/Advisor Information - Specialty.png" class="img-responsive" alt="Home Screen" style="width: 200px; height: 400px; border-radius: 25px; margin-top: 10px;">
-              </a>
-
-          </div>
-        </div>
         </div>
       </div> <!-- .col-md-8 -->
       
@@ -129,7 +95,7 @@
           </div>
         </div>
         <div class="block-21 mb-4 d-flex">
-          <a href="artist.html" class="blog-img mr-4" style="background-image: url(images/artist/home-bg.jpg);"></a>
+          <a href="artist.html" class="blog-img mr-4" style="background-image: url(images/artist/homebg.jpg);"></a>
           <div class="text">
             <h3 class="heading"><a href="artist.html">Being an artist</a></h3>
             <div class="meta">
@@ -139,8 +105,142 @@
         </div>
       </div>
   </div>
-</div>
-</section> <!-- .section -->
+
+
+  <div class="ftco-animate" id="process" style="width: 1050px; margin-left: 15px;">
+    <h2 class="mb-3 mt-5">Design Process &amp; Research</h2>
+        <p>Our team knew from firsthand experience that VMS students have difficulty choosing themes for senior projects. 
+          We intended to address these issues and find a solution that was acceptable to both students and faculty mentors.</p><br>
+    <ul class = "nav nav-pills">
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color active" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('one')">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('two')">Brainstorming</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill"  onclick="openPill('three')">User Persona and Journey</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('four')">Wireframing and Prototyping</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('five')">User Testing</a>
+      </li>
+      <li class="nav-item">
+        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('six')">Usability Testing</a>
+      </li>
+    </ul>
+    <br>
+
+    <div class="ftco-project bg-light shadow" style="width: 1045px; border-radius: 10px; padding-bottom: 20px;">
+      <div class="bio mr-5">
+        <div class="tab-content">
+          <div id="one" class="container tab-pane ftco-animate active process"><br>
+            <p>One-on-one interviews with students from the VMS faculty were performed to learn more about the various challenges they were having or new features they might want to see implemented. 
+              We were able to empathize with each user and understand their greatest pain point areas as a result of our research.</p>
+            <dl style="padding-left: 40px; color: #B2B493;">
+              <dt>Student’s greatest pain points:</dt>
+              <dd>- No place to gain information: Don’t know where to find information</dd>
+              <dd>- No reference: Can’t figure out what kind of projects to make</dd>
+              <dd>-	Clueless: Don’t know on what basis to choose a project or advisor</dd>
+            </dl>
+        
+            <p>It encouraged us to think outside the box and expand our possibilities for improving our ideas and meeting the demands of our users. 
+              We were able to set our project's goals and objectives by referring to the three key user pain points.</p>
+            <dl style="padding-left: 40px; color: #B2B493;">
+              <dt>Our Solution:</dt>
+              <dd>- Recommend projects based on skills</dd>
+              <dd>- A showcase of senior project</dd>
+              <dd>-	Display professor’s information (project advisor)</dd>
+              </dl>
+            </div>
+
+          <div id="two" class="container tab-pane ftco-animate process" style="display:none"><br>
+            <p>By referring to the problem statements identified during user research, our team began brainstorming possibilities for our application. 
+              We then made affinity diagrams, in which we grouped all comparable traits together and labeled them.</p>
+            <a href="images/auidea/affinity.png" class="image-popup">
+              <img src="images/auidea/affinity.png" class="img-responsive" alt="Affinity Diagram" style="width: 820px; height: 500px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+            </a>
+          </div>
+
+          <div id="three" class="container tab-pane ftco-animate process" style="display:none"><br>
+            <h2 style="font-size: 28px; color: #B2B493;">User Persona</h2>
+            <p>We made up fictional characters to reflect a subset of our target demographic and their activities. 
+              We based one character from each program because VMS offers two undergraduate programs, Information Technology and Computer Science, and we wanted to give a true depiction of the students.</p>
+              <a href="images/auidea/userP1.png" class="image-popup">
+                <img src="images/auidea/userP1.png" class="img-responsive" alt="User Persona 1" style="width: 400px; height: 200px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+              </a>
+
+              <a href="images/auidea/userP2.png" class="image-popup">
+                <img src="images/auidea/userP2.png" class="img-responsive" alt="User Persona 2" style="width: 400px; height: 200px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+              </a>
+
+            <h2 class="mb-3 mt-5" style="font-size: 28px; color: #B2B493;">User Journey</h2>
+            <p>We developed a narrative, which tells the story of how the user interacts with our app. 
+              This was accomplished by mapping the story based on our user research and defining scenarios for each persona and their expectations.</p>
+              <a href="images/auidea/userJ1.jpeg" class="image-popup">
+                <img src="images/auidea/userJ1.jpeg" class="img-responsive" alt="User Persona 2" style="width: 400px; height: 220px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+              </a>
+
+              <a href="images/auidea/userJ2.jpeg" class="image-popup">
+                <img src="images/auidea/userJ2.jpeg" class="img-responsive" alt="User Persona 2" style="width: 400px; height: 220px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+              </a>
+          </div>
+
+          <div id="four" class="container tab-pane ftco-animate process" style="display:none"><br>
+            <p>The content on the interfaces was organized using gestalt concepts in this step to make it aesthetically beautiful and easy to grasp.</p>
+            <h2 style="font-size: 28px; color: #B2B493;">Wireframe</h2>
+            <p>It was evident from the affinity diagram which features we would incorporate in our application. As a result, we produced our first prototype. 
+              It was a monochrome portrayal that focused mostly on the app's structure and how the user would traverse it.</p>
+              <div class="bio mr-5">
+                <div class="work-thumb">
+                  <a href="images/auidea/lowproto.jpeg" class="image-popup">
+                    <img src="images/auidea/lowproto.jpeg" class="img-responsive" alt="Splash Screen" style="width: 800px; height: 550px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
+                  </a>
+                </div>
+              </div>
+
+            <h2 class="mb-3 mt-5" style="font-size: 28px; color: #B2B493;">Prototype</h2>
+            <p>We produced computer-based high-fidelity prototypes with realistic (mouse-keyboard) user interactions. 
+              Before we started developing, it got us as close as possible to a good depiction of our application and its user interface. 
+              The theme and color scheme of the screens were now based on the faculty's brand color.</p>
+
+            <!-- <div class="about-author d-flex p-4 bg-light-dark" style="width: 800px;"> -->
+              <div class="bio mr-5">
+                <div class="work-thumb">
+  
+                  <a href="images/auidea/proto1.jpeg" class="image-popup">
+                    <img src="images/auidea/proto1.jpeg" class="img-responsive" alt="Splash Screen" style="width: 800px; height: 550px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
+                  </a>
+                    
+                  <a href="images/auidea/proto2.jpeg" class="image-popup">
+                    <img src="images/auidea/proto2.jpeg" class="img-responsive" alt="Splash Screen" style="width: 800px; height: 720px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
+                  </a>
+    
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div id="five" class="container tab-pane ftco-animate process" style="display:none"><br>
+            <p>The user testing for AuIdea was done with faculty students. 
+              We tried to analyze user behavior as they interacted with our software throughout the process. 
+              'If you were looking for all of the professor's information, where would you expect to find it?' is an example question. 
+              The layout of our program matched majority of the user's replies to such questions. Following the testing process, the user was asked a series of questions to learn more about how they felt while attempting to use the app and if there was anything they would change. 
+              The software was subsequently converted into an Android Mobile App, with all of the UI programmed and turned into functional displays.</p>
+          </div>
+
+          <div id="six" class="container tab-pane ftco-animate process" style="display:none"><br>
+            <p>We chose to undertake user experience testing with real VMS Faculty members in order to test the interface for usability. 
+              Students were requested that specific tasks be completed, such as finding the profile screen, filtering a specific project from the home screen, and so on. 
+              They were also asked some basic task-related feedback questions, such as whether anything surprised them or if they performed as predicted.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <footer class="ftco-footer ftco-section">
   <div class="container">
@@ -173,6 +273,10 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
 <script src="js/google-map.js"></script>
 
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+
+<script src="js/nav.js"></script>
 <script src="js/main.js"></script>
 
 </body>

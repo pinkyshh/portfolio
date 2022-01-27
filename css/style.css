@@ -36,6 +36,13 @@
   cursor: crosshair;
 }
 
+.nav-pills > li > a:hover {
+  background-color: #b2b4932f !important;
+} 
+
+.nav-link-color {
+  cursor: pointer;
+}
 
 :root {
   --blue: #007bff;
@@ -59,6 +66,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --custom: #B2B493;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -3435,8 +3443,10 @@ input[type="button"].btn-block {
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #007bff; }
+  color: #000;
+  background-color: #B2B493 !important; 
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
 
 .nav-fill .nav-item {
   -webkit-box-flex: 1;
