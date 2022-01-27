@@ -45,7 +45,7 @@
   <div class="container">
     <div class="row no-gutters slider-text align-items-end justify-content-center">
       <div class="col-md-9 ftco-animate pb-5 text-center">
-       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="index.html#projects-section">Projects <i class="fa fa-chevron-right"></i></a></span> <span>Being an artist<i class="fa fa-chevron-right"></i></span></p>
+       <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="fa fa-chevron-right"></i></a></span> <span class="mr-2"><a href="index.html#projects-section">Projects <i class="fa fa-chevron-right"></i></a></span> <span>Being an artist <i class="fa fa-chevron-right"></i></span></p>
        <h1 class="mb-0 bread">Project details</h1>
      </div>
    </div>
@@ -70,97 +70,100 @@
         </div>
         <h2 class="mb-3 mt-5">To visit the website </h2>
         <p>Please click the link above or <a href="https://pinkyshh.github.io/pinky.github.io/payment-calculator/"><b>Click Here</b></a></p>
-    </div>
-      
-    <div class="col-lg-4 sidebar ftco-animate">
-      <div class="sidebar-box ftco-animate">
-        <h3 class="heading-sidebar">Other Projects</h3>
-        <div class="block-21 mb-4 d-flex">
-          <a href="auidea.html" class="blog-img mr-4" style="background-image: url(images/auidea/auidea2.png);"></a>
-          <div class="text">
-            <h3 class="heading"><a href="auidea.html">AuIdea</a></h3>
-            <div class="meta">
-              <div><span class="icon-calendar"></span> Android Application</div>
-            </div>
-          </div>
-        </div>
-        <div class="block-21 mb-4 d-flex">
-          <a href="iLearn.html" class="blog-img mr-4" style="background-image: url(images/ilearn/robot.jpeg);"></a>
-          <div class="text">
-            <h3 class="heading"><a href="iLearn.html">iLearn</a></h3>
-            <div class="meta">
-              <div><span class="icon-calendar"></span> Web Application</div>
-            </div>
-          </div>
-        </div>
-        <div class="block-21 mb-4 d-flex">
-          <a href="elixir.html" class="blog-img mr-4" style="background-image: url(images/elixir/elixis.png);"></a>
-          <div class="text">
-            <h3 class="heading"><a href="elixir.html">Elixir</a></h3>
-            <div class="meta">
-              <div><span class="icon-calendar"></span> iOS Application</div>
+
+      <div class="ftco-animate" id="process" style="width: 1050px;">
+        <h2 class="mb-3 mt-5">Design &amp; Solution</h2>
+
+        <ul class = "nav nav-pills">
+          <li class="nav-item">
+            <a class = "nav-link nav-link-color active" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('req')">Requirements</a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('design')">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('sol')">Solution</a>
+          </li>
+        </ul>
+        <br>
+
+        <div class="ftco-project bg-light shadow" style="width: 1045px; border-radius: 10px; padding-bottom: 20px;">
+          <div class="bio mr-5">
+            <div class="tab-content">
+              <div id="req" class="container tab-pane ftco-animate active process"><br>
+                <dl>
+                  <dd>- The website lists at least 5 product items. Create each page for each product.</dd>
+                  <dd>- Design a way to display the product description when the user clicks on the product item. </dd>
+                  <dd>-	Add a Payment Calculator as shown in the image. <br><br>
+                    <a href="images/artist/artistPayCal.jpeg" class="image-popup">
+                      <img src="images/artist/artistPayCal.jpeg" class="img-responsive" alt="Calculator" style="width: 200px; height: 400px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
+                    </a>
+                    <br><br>
+                  </dd>
+                  <dd>-	Create interest rate as a toggle-button group. The group contains 3 buttons: 0%, 4%, &amp; 8%.</dd>
+                </dl>
+              </div>
+
+              <div id="design" class="container tab-pane ftco-animate process" style="display:none"><br>
+                <p>My goal was to make the website look elegant while also incorporating all of the criteria. The theme was chosen to complement the colors of the art works and to appeal to the user. I made a collection of 3 product categories with 2 items in each.</p>
+                  <a href="images/artist/collection.png" class="image-popup">
+                    <img src="images/artist/collection.png" class="img-responsive shadow" alt="Splash Screen" style="width: 800px; height: 300px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
+                  </a>
+                  <br>
+                  <a href="images/artist/product.png" class="image-popup">
+                    <img src="images/artist/product.png" class="img-responsive shadow" alt="Splash Screen" style="width: 500px; height: 700px; border-radius: 8px; margin-right: 25px; margin-left: 40px; margin-top: 20px;">
+                  </a>
+              </div>
+
+              <div id="sol" class="container tab-pane ftco-animate process" style="display:none"><br>
+                <p>The objective of this calculator, which was developed using JavaScript, is to allow the user to estimate the cost of purchasing an art piece. For the calcultor, I decided to use a slider for the amount making it easier for the user to input their value instead of typing it in. 
+                  Based on the requirement, I used a toggle button for the interest rate and did the same for the duration.</p>
+
+                  <a href="images/artist/calc.png" class="image-popup">
+                    <img src="images/artist/calc.png" class="img-responsive" alt="Splash Screen" style="width: 800px; height: 400px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
+                  </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+      <div class="col-lg-4 sidebar ftco-animate">
+        <div class="sidebar-box ftco-animate">
+          <h3 class="heading-sidebar">Other Projects</h3>
+          <div class="block-21 mb-4 d-flex">
+            <a href="auidea.html" class="blog-img mr-4" style="background-image: url(images/auidea/auidea2.png);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="auidea.html">AuIdea</a></h3>
+              <div class="meta">
+                <div><span class="icon-calendar"></span> Android Application</div>
+              </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a href="iLearn.html" class="blog-img mr-4" style="background-image: url(images/ilearn/robot.jpeg);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="iLearn.html">iLearn</a></h3>
+              <div class="meta">
+                <div><span class="icon-calendar"></span> Web Application</div>
+              </div>
+            </div>
+          </div>
+          <div class="block-21 mb-4 d-flex">
+            <a href="elixir.html" class="blog-img mr-4" style="background-image: url(images/elixir/elixis.png);"></a>
+            <div class="text">
+              <h3 class="heading"><a href="elixir.html">Elixir</a></h3>
+              <div class="meta">
+                <div><span class="icon-calendar"></span> iOS Application</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <div class="ftco-animate" id="process" style="width: 1050px; margin-left: 15px;">
-    <h2 class="mb-3 mt-5">Design &amp; Solution</h2>
-
-    <ul class = "nav nav-pills">
-      <li class="nav-item">
-        <a class = "nav-link nav-link-color active" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('req')">Requirements</a>
-      </li>
-      <li class="nav-item">
-        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('design')">Design</a>
-      </li>
-      <li class="nav-item">
-        <a class = "nav-link nav-link-color" style="border-radius: 25px; color: black;" data-toggle="pill" onclick="openPill('sol')">Solution</a>
-      </li>
-    </ul>
-    <br>
-
-    <div class="ftco-project bg-light shadow" style="width: 1045px; border-radius: 10px; padding-bottom: 20px;">
-      <div class="bio mr-5">
-        <div class="tab-content">
-          <div id="req" class="container tab-pane ftco-animate active process"><br>
-            <dl>
-              <dd>- The website lists at least 5 product items. Create each page for each product.</dd>
-              <dd>- Design a way to display the product description when the user clicks on the product item. </dd>
-              <dd>-	Add a Payment Calculator as shown in the image. <br><br>
-                <a href="images/artist/artistPayCal.jpeg" class="image-popup">
-                  <img src="images/artist/artistPayCal.jpeg" class="img-responsive" alt="Calculator" style="width: 200px; height: 400px; border-radius: 5px; margin-right: 25px; margin-left: 40px;">
-                </a>
-                <br><br>
-              </dd>
-              <dd>-	Create interest rate as a toggle-button group. The group contains 3 buttons: 0%, 4%, &amp; 8%.</dd>
-            </dl>
-          </div>
-
-          <div id="design" class="container tab-pane ftco-animate process" style="display:none"><br>
-            <p>My goal was to make the website look elegant while also incorporating all of the criteria. The theme was chosen to complement the colors of the art works and to appeal to the user. I made a collection of 3 product categories with 2 items in each.</p>
-              <a href="images/artist/collection.png" class="image-popup">
-                <img src="images/artist/collection.png" class="img-responsive shadow" alt="Splash Screen" style="width: 800px; height: 300px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
-              </a>
-              <br>
-              <a href="images/artist/product.png" class="image-popup">
-                <img src="images/artist/product.png" class="img-responsive shadow" alt="Splash Screen" style="width: 500px; height: 700px; border-radius: 8px; margin-right: 25px; margin-left: 40px; margin-top: 20px;">
-              </a>
-          </div>
-
-          <div id="sol" class="container tab-pane ftco-animate process" style="display:none"><br>
-            <p>The objective of this calculator, which was developed using JavaScript, is to allow the user to estimate the cost of purchasing an art piece. For the calcultor, I decided to use a slider for the amount making it easier for the user to input their value instead of typing it in. 
-              Based on the requirement, I used a toggle button for the interest rate and did the same for the duration.</p>
-
-              <a href="images/artist/calc.png" class="image-popup">
-                <img src="images/artist/calc.png" class="img-responsive" alt="Splash Screen" style="width: 800px; height: 400px; border-radius: 8px; margin-right: 25px; margin-left: 40px;">
-              </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> <!-- .section -->
+</section> <!-- .section -->
 
 <footer class="ftco-footer ftco-section">
   <div class="container">
@@ -171,8 +174,8 @@
         <p>Thank you for visiting!</p>
         </div>
       </div>
-    </div>
-  </footer>
+  </div>
+</footer>
 
 
 <!-- loader -->
