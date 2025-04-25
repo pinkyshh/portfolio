@@ -5440,7 +5440,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-color: #f8f9fa !important; }
+  background-color: #A3685A !important; }
 
 .bg-light-dark {
   background-color: #E4E4E4;
@@ -8760,7 +8760,7 @@ h1, h2, h3, h4, h5,
   color: #000000; }
 
 .bg-light {
-  background: #f8f9fa !important; }
+  background: #A3685A !important; }
 
 .bg-primary {
   background: #281523; }
@@ -9135,7 +9135,7 @@ h1, h2, h3, h4, h5,
 .testimony-wrap {
   display: block;
   position: relative;
-  background: #F3EFE4;
+  background-color: #F3EFE4;
   padding: 0 20px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
