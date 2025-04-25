@@ -11,7 +11,7 @@
 -----------------------------------------*/
 
 #work {
-  background: #c43939;
+  background: #ffffff;
 }
 
 #work .work-thumb {
@@ -58,8 +58,8 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #ffffff;
-  --secondary: #a83145;
+  --primary: #007bff;
+  --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
   --warning: #ffc107;
@@ -3365,7 +3365,7 @@ input[type="button"].btn-block {
     border-radius: 1rem; }
   .custom-range::-ms-fill-upper {
     margin-right: 15px;
-    background-color: #e6dede;
+    background-color: #dee2e6;
     border-radius: 1rem; }
   .custom-range:disabled::-webkit-slider-thumb {
     background-color: #adb5bd; }
