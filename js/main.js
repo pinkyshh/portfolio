@@ -288,24 +288,6 @@
 
 })(jQuery);
 
-// Function to change navbar color based on section background
-document.addEventListener("scroll", function () {
-  const navbar = document.getElementById("ftco-navbar");
-  const sections = document.querySelectorAll("section");
-  let navbarColor = "bg-dark"; // Default navbar color
-
-  sections.forEach((section) => {
-    const rect = section.getBoundingClientRect();
-    if (rect.top <= 50 && rect.bottom >= 50) {
-      const bgColor = window.getComputedStyle(section).backgroundColor;
-      navbarColor = bgColor === "rgb(255, 255, 255)" ? "bg-light" : "bg-dark";
-    }
-  });
-
-  navbar.classList.remove("bg-dark", "bg-light");
-  navbar.classList.add(navbarColor);
-});
-
 $(function() {
 
   $(".progress").each(function() {
@@ -331,5 +313,21 @@ $(function() {
 
   }
 
+});
+
+document.addEventListener("scroll", function () {
+    const navbar = document.getElementById("ftco-navbar");
+    const sections = document.querySelectorAll("section");
+    let navbarBg = getComputedStyle(document.documentElement).getPropertyValue("--navbar-bg-light").trim();
+
+    sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 50 && rect.bottom >= 50) {
+            const bgColor = window.getComputedStyle(section).backgroundColor;
+            navbarBg = bgColor === "rgb(255, 255, 255)" ? "var(--navbar-bg-light)" : "var(--navbar-bg-dark)";
+        }
+    });
+
+    document.documentElement.style.setProperty("--navbar-bg", navbarBg);
 });
 
