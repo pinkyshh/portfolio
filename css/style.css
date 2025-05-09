@@ -8182,7 +8182,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: "Poppins", Arial, sans-serif;
-  background: #f3efe4;
+  background: #ffffff;
   font-size: 16px;
   line-height: 1.8;
   font-weight: 400;
@@ -8345,7 +8345,7 @@ h1, h2, h3, h4, h5,
     left: 0;
     top: 0;
     margin-top: -130px;
-    background: #f3efe4 !important;
+    background: #ffffff !important;
     -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
     padding: 0 15px; }
@@ -9135,7 +9135,7 @@ h1, h2, h3, h4, h5,
 .testimony-wrap {
   display: block;
   position: relative;
-  background-color: #F3EFE4;
+  background-color: #F9FAFB;
   padding: 0 20px;
   border: 1px solid rgba(0, 0, 0, 0.02);
   -webkit-box-shadow: 0px 5px 21px -14px rgba(0, 0, 0, 0.14);
@@ -9151,7 +9151,7 @@ h1, h2, h3, h4, h5,
     -ms-border-radius: 50%;
     border-radius: 50%; }
   .testimony-wrap .fa {
-    color: #281523;
+    color: #D9376E;
     font-size: 30px;
     position: absolute;
     left: 20px; }
@@ -9165,7 +9165,7 @@ h1, h2, h3, h4, h5,
     color: #b3b3b3; }
 
 .aside-stretch {
-  background: #c7c9b1; }
+  background: #D9376E; }
   .aside-stretch:after {
     position: absolute;
     top: 0;
@@ -9173,7 +9173,7 @@ h1, h2, h3, h4, h5,
     bottom: 0;
     content: '';
     width: 360%;
-    background: #c7c9b1; }
+    background: #D9376E; }
   @media (max-width: 767.98px) {
     .aside-stretch {
       background: transparent; }
