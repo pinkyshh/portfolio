@@ -8229,13 +8229,13 @@ h1, h2, h3, h4, h5,
       padding-left: 15px;
       padding-right: 15px; } }
   .ftco-navbar-light .navbar-brand {
-    color: #ffffff; /*#000*/
+    color: #000000; /*#000*/
     padding-top: .7rem;
     padding-bottom: .7rem; }
     .ftco-navbar-light .navbar-brand span {
-      color: #ffffff; } /*#000*/
+      color: #000000; } /*#000*/
     .ftco-navbar-light .navbar-brand:hover, .ftco-navbar-light .navbar-brand:focus {
-      color: #ffffff !important; } /*#000*/
+      color: #000000 !important; } /*#000*/
     @media (max-width: 991.98px) {
       .ftco-navbar-light .navbar-brand {
         color: #fff; } }
