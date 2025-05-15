@@ -9782,30 +9782,6 @@ textarea.form-control {
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
 
-/* CHATGPT */
-.vertical-text {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  opacity: 0.1;
-}
-
-.fade-in {
-  animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* CHATGPT END */
-
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
